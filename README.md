@@ -1,2 +1,1 @@
-# suggestions-prestashop
-Подсказки DaData.ru для PrestaShop
+# Подсказки DaData.ru для PrestaShop

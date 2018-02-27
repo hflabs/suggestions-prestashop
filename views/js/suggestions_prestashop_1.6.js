@@ -62,10 +62,8 @@ var dadataSuggestions = {
         ],
         suggest_fio_label: 'Full Name',
         suggest_address_label: 'Full Address',
-        DADATA_SUGGESTIONS_URL: '',
         DADATA_SUGGESTIONS_TOKEN: '',
-        DADATA_SUGGESTIONS_TRIG_SEL_SPC: true,
-        DADATA_SUGGESTIONS_COUNT: 10,
+        DADATA_SUGGESTIONS_COUNT: 5,
         DADATA_SUGGESTIONS_REGION_FIELD: 'id_state',
         DADATA_SUGGESTIONS_FIO: true,
         DADATA_SUGGESTIONS_ADDRESS: true
@@ -106,9 +104,7 @@ var dadataSuggestions = {
                     nameEl.parent().attr("style", "display: none !important");
                     $("#" + value.surname).parent().attr("style", "display: none !important");
                     $("#" + value.suggest_field).suggestions({
-                        serviceUrl: dadataSuggestions.configuration.DADATA_SUGGESTIONS_URL,
                         token: dadataSuggestions.configuration.DADATA_SUGGESTIONS_TOKEN,
-                        triggerSelectOnSpace: dadataSuggestions.configuration.DADATA_SUGGESTIONS_TRIG_SEL_SPC,
                         count: dadataSuggestions.configuration.DADATA_SUGGESTIONS_COUNT,
                         type: "NAME",
                         onSelect: function (suggestion) {
@@ -130,9 +126,7 @@ var dadataSuggestions = {
                         value.region = dadataSuggestions.configuration.DADATA_SUGGESTIONS_REGION_FIELD;
                     }
                     $("#" + value.suggest_field).suggestions({
-                        serviceUrl: dadataSuggestions.configuration.DADATA_SUGGESTIONS_URL,
                         token: dadataSuggestions.configuration.DADATA_SUGGESTIONS_TOKEN,
-                        triggerSelectOnSpace: dadataSuggestions.configuration.DADATA_SUGGESTIONS_TRIG_SEL_SPC,
                         count: dadataSuggestions.configuration.DADATA_SUGGESTIONS_COUNT,
                         type: "ADDRESS",
                         onSelect: function (suggestion) {
